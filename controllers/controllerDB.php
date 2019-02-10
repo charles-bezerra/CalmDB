@@ -190,23 +190,24 @@
             }
         }
 
-        public function select($columns, $condition, $value){
-            $this->connect();
-            try{
-                $select = "";
-                for($i = 0; $i < count($columns); $i++){
+        // public function select($columns, $condition, $value){
+        //     $this->connect();
+        //     try{
+        //         $select = "";
+        //         for($i = 0; $i < count($columns); $i++){
 
-                }
-                mysqli_query($this->con, "");
-            }
-            catch(Exception $error){
-            	$this->close_connect();
-                echo $error->getMessage();
-            	return false;
-            }
+        //         }
+        //         mysqli_query($this->con, "");
+        //     }
+        //     catch(Exception $error){
+        //     	$this->close_connect();
+        //         echo $error->getMessage();
+        //     	return false;
+        //     }
 
-        }
+        // }
         
+        // Atualiza algum atributo, parametros (id, coluna, novo valor)
         public function update($id, $column, $value){
             $this->connect();
             try{
@@ -224,8 +225,6 @@
         
         public function delete($id){
             $this->connect();
-
-
         }
     }
 
